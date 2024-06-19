@@ -1,30 +1,32 @@
-import os
-os.system("cls")
+# import os
+# os.system("cls")
 
 
-print('single quotes = ','spam eggs') 
-print("double quotes = ","Paris rabbit got your back :)! Yay!" )
-print("digits and numerals enclosed in quotes are also strings = ",'1975')
+# print('single quotes = ','spam eggs') 
+# print("double quotes = ","Paris rabbit got your back :)! Yay!" )
+# print("digits and numerals enclosed in quotes are also strings = ",'1975')
 
-print('doesn\'t') # use \' to escape the single quote...
-print("doesn't") # ...or use double quotes instead
+# print('doesn\'t') # use \' to escape the single quote...
+# print("doesn't") # ...or use double quotes instead
 
-print('"Yes," they said.')
-print("\"Yes,\" they said.")
-print('"Isn\'t," they said.')
+# print('"Yes," they said.')
+# print("\"Yes,\" they said.")
+# print('"Isn\'t," they said.')
 
-s = 'First line.\nSecond line.'
-print(s)
+# s = 'First line.\nSecond line.'
+# print(s)
 
-print('C:\some\name') 
-print(r'C:\some\name')
+# print('C:\some\name') 
+# print(r'C:\some\name')
 
-print("""\
-Usage: thingy [OPTIONS]
-     -h                        Display this usage message
-     -H hostname               Hostname to connect to
-""")
+# print("""\
+# Usage: thingy [OPTIONS]
+#      -h                        Display this usage message
+#      -H hostname               Hostname to connect to
+# """)
 
 
+sd = 'ghaizar'
+print("Hello {},{}".format(sd,"bautista"))
 
-'1975'  
+print(f"hello {len(sd)}, {'Ghaizar'}")
