@@ -1,8 +1,13 @@
+'''
+Developer: Ghaizar A. Bautista
+Title: Basic Swertres
+Note: Kung gagamit ka ng code ko
+        wag mong alisin to. :)
+'''
 import random, os
 os.system('cls')
+
 print("Swertres!")
-
-
 print("Enter your 3 Bet numbers (each between 0 and 9):")
 user_numbers = []
 for i in range(3):
@@ -23,7 +28,7 @@ print("Swertres Result:", result_numbers)
 
 if user_numbers == result_numbers:
     print("You Win!")
-elif user_numbers == result_numbers:
+elif set(user_numbers) == set(result_numbers):
     print("You Partial Win!")
 else:
     print("You lose!")

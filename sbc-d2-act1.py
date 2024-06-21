@@ -1,3 +1,9 @@
+'''
+Developer: Ghaizar A. Bautista
+Title: Basic String Manipulation
+Note: Kung gagamit ka ng code ko
+        wag mong alisin to. :)
+'''
 import os
 os.system("cls")
 
