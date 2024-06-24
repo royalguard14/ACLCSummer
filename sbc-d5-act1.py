@@ -1,6 +1,6 @@
 '''
 Developer: Ghaizar A. Bautista
-Title: Basic String Manipulation
+Title: Basic Stack and Queue
 Note: Kung gagamit ka ng code ko wag mong alisin to. :)
 '''
 import os
