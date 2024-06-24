@@ -4,22 +4,18 @@ Title: Basic Stack and Queue
 Note: Kung gagamit ka ng code ko wag mong alisin to. :)
 '''
 import os
-office = []
-while True:
-    command = input("Command: ").lower().replace(" ","")
-    if "add" in command:
-        fil1 = command.replace("add","")
-        office.append(fil1)
-    elif "display" in command:print(office)
-    elif "naa" in command: office.pop(0)
-    elif "wala" in command: office.pop()
-    elif "clear" in command: os.system('cls')
-    elif "exit" in command: break
-    else:
-        print("Command Invalid")
-        
-
-
+office = [] # initialize list
+while True: # endless loop until exit command execute
+    command = input("Command: ").lower().replace(" ","") # get the user command and filter the word 
+    if "add" in command: # if the word add is in the inserted command
+        fil1 = command.replace("add","") # string manipulation, removing the word add
+        office.append(fil1) # add the number to list , from command add.
+    elif "display" in command:print(office) # print the list
+    elif "naa" in command: office.pop(0) #Queue Remove 
+    elif "wala" in command: office.pop() #Stack Remove
+    elif "clear" in command: os.system('cls') # clear terminal
+    elif "exit" in command: break   #end the loop
+    else: print("Command Invalid")  #other command
 
 
 
