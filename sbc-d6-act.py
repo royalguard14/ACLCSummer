@@ -1,20 +1,6 @@
-#act3
-'''
-*****
-****
-***
-**
-*   *
-**
-***
-****
-*****
-'''
-
-
 '''
 Developer: Ghaizar A. Bautista
-Title: for and while Activity
+Title: for and while Activities
 '''
 import os
 os.system("cls")
@@ -22,15 +8,15 @@ os.system("cls")
 def help():
     print("""\
 Command:
-     act1
-        
-        
+     act1 word|Sentence       Check if input is Palindrome or not.
+     act2 row,col             Create a box with * based on row and col. 
+     act3 row                 Create a ????????  
      clear                    Clear terminal
      exit                     Exit code
 """)
 ##############################################################
 def activity1(x):
-    xf = x.strip()
+    xf = x.strip().replace("word=","")
     revxf = ""
     for i in xf:
         revxf = i+revxf
@@ -44,7 +30,6 @@ def activity2(x):
     xf = x.split(",")
     row,col = int(xf[0]),int(xf[1])
     print("*" * col) # Top row
-
     row_count = 2 
     while row_count <= row - 1:
         print( "*" +' ' * (col-2) + '*') # Middle rows
@@ -53,14 +38,13 @@ def activity2(x):
 
 def activity3(rows):
     rows = int(rows)
-    for i in range(rows, 1, -1):
+    for i in range(rows, 1, -1): #top side
         print("*" * i)
 
-    print("*" + (" ") * (rows-2 ) + "*")
+    print("*" + (" ") * (rows-2 ) + "*") #middle
 
-    for i in range(2, rows + 1):
+    for i in range(2, rows + 1): #bot side
         print("*" * i)
-
 
 ##############################################################
 while True: 
