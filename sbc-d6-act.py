@@ -25,7 +25,6 @@ def activity1(x):
     else:
         print("This word is Not Palindrome")
 
-
 def activity2(x):
     xf = x.split(",")
     row,col = int(xf[0]),int(xf[1])
@@ -40,9 +39,7 @@ def activity3(rows):
     rows = int(rows)
     for i in range(rows, 1, -1): #top side
         print("*" * i)
-
     print("*" + (" ") * (rows-2 ) + "*") #middle
-
     for i in range(2, rows + 1): #bot side
         print("*" * i)
 
