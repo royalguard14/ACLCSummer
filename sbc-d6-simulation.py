@@ -4,7 +4,7 @@ Title: Loops
 '''
 import os
 os.system("cls")
-
+##############################################################
 def help():
     print("""\
 Command:
@@ -20,7 +20,7 @@ Command:
      -clear                    Clear terminal
      -exit                     Exit code
 """)
-
+##############################################################
 def forloop1():
     li = [0,1,2,3,4]
     for n in li:
@@ -52,9 +52,7 @@ def forloop5(row):
     for x in range(int(row) +1):
         print("*" * x)
 
-
-
-
+##############################################################
 def whileloop1():
     n = 0
     while n < 5:
@@ -70,22 +68,16 @@ def whileloop2(x):
         print
         if username == "batman" and password == "akosiden":
             print("Successfully Login")
+            log = False #stop while
+            #break  #break statement 
         else:
             print("login Failed, Try again!\n")
-            log = False
-    
-
-
-
-
-
-
-
-
+            
+##############################################################
 while True: 
     command = input("Command: ").lower().replace(" ","") 
-    if "while1" in command:whileloop1() 
-    if "while2" in command:whileloop2(command.replace("while2","")) 
+    if "while1" in command: whileloop1() 
+    elif "while2" in command: whileloop2(command.replace("while2","")) 
     elif "loop1" in command: forloop1()
     elif "loop2" in command: forloop2()
     elif "loop3" in command: forloop3()
