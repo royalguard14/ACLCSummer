@@ -1,14 +1,3 @@
-'''
-act2 = while loop
-row = 5
-col = 5
-
-****
-   *
-   *
-   *
-****
-'''
 #act3
 '''
 *****
@@ -33,9 +22,11 @@ os.system("cls")
 def help():
     print("""\
 Command:
+     act1
         
-     -clear                    Clear terminal
-     -exit                     Exit code
+        
+     clear                    Clear terminal
+     exit                     Exit code
 """)
 ##############################################################
 def activity1(x):
@@ -51,27 +42,22 @@ def activity1(x):
 
 def activity2(x):
     xf = x.split(",")
-    row = int(xf[0])
-    col = int(xf[1]) -1
-
+    row,col = int(xf[0]),int(xf[1])
     print("*" * col) # Top row
-    
+
     row_count = 2 
     while row_count <= row - 1:
-        print(' ' * (col-1) + '*') # Middle rows
+        print( "*" +' ' * (col-2) + '*') # Middle rows
         row_count += 1
     print("*" * col) # Bottom row
 
 def activity3(rows):
     rows = int(rows)
-    
-    # Print descending pyramid
-    for i in range(rows, 0, -1):
+    for i in range(rows, 1, -1):
         print("*" * i)
-    
-    # Print ascending pyramid
+    print("*"," ","*")
     for i in range(2, rows + 1):
-        print("*" * i + )
+        print("*" * i)
 
 ##############################################################
 while True: 
