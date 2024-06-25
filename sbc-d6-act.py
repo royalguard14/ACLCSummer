@@ -55,9 +55,12 @@ def activity3(rows):
     rows = int(rows)
     for i in range(rows, 1, -1):
         print("*" * i)
-    print("*"," ","*")
+
+    print("*" + (" ") * (rows-2 ) + "*")
+
     for i in range(2, rows + 1):
         print("*" * i)
+
 
 ##############################################################
 while True: 
